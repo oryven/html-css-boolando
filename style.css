@@ -6,15 +6,14 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 80%;
-    height: 500px ;
-    margin: auto;
-    background-color: aqua;
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-.row {
-    
+.container {
+    width: 80%;
+    height: 400px ;
+    margin: auto;
 }
 
 .row::after{
@@ -24,14 +23,15 @@
 }
 
 .contenitore-prodotto {
-    width: 250px;
-    background-color: brown;
+    width: 150px;
+    
     float: left;
-    border: brown 2px solid;
+    margin-right: 10px;
+    width: calc(100% / 3 - 10px);
 }
 
 .prodotto {
-    position: relative;
+    position: relative; 
 }
 
 img {
@@ -39,18 +39,38 @@ img {
     object-fit: cover
 }
 
-.over {
+/* .over {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(169, 169, 169, 0.5);
-    z-index: 50;
-}
+} */
 
 .cuore {
     position: absolute;
     right: 0;
     top: 20px;
+    background-color: white;
+    padding: 3px 6px;
+}
+
+.sconto {
+    padding: 5px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+}
+
+.etichetta {
+    padding: 5px;
+    font-size: 12px;
+    background-color:rgb(18, 179, 58);
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
 }
 
 
