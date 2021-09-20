@@ -1,0 +1,32 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    height: 500px ;
+    margin: auto;
+    background-color: aqua;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contenitore-prodotto {
+    width: 250px;
+    background-color: brown;
+    float: left;
+    border: brown 2px solid;
+} 
+
+img {
+    width: 100%;
+    object-fit: cover
+}
