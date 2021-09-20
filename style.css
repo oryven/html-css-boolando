@@ -13,6 +13,10 @@
     background-color: aqua;
 }
 
+.row {
+    
+}
+
 .row::after{
     content: "";
     display: table;
@@ -24,9 +28,30 @@
     background-color: brown;
     float: left;
     border: brown 2px solid;
-} 
+}
+
+.prodotto {
+    position: relative;
+}
 
 img {
     width: 100%;
     object-fit: cover
 }
+
+.over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 169, 169, 0.5);
+    z-index: 50;
+}
+
+.cuore {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+
+
