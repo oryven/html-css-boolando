@@ -28,14 +28,15 @@ body {
 
 .contenitore-prodotto {
     width: 150px;
-    
     float: left;
     margin-right: 10px;
     width: calc(100% / 3 - 10px);
 }
 
 .prodotto {
-    position: relative; 
+    position: relative;
+    width: 100%;
+
 }
 
 img {
@@ -44,15 +45,21 @@ img {
 }
 
 .imgover {
+    position: absolute;
     display: none;
+    width: 100%;
+    /* height: 100%; */
+    z-index: 50;
+    /* object-fit: cover; */
 }
 
-.over:hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: inline;
+.prodotto:hover .imgover {
+    /* width: 100%;
+    height: 100%; */
+    display: block;
     z-index: 50;
+    left: 0;
+    /* object-fit: cover; */
 }
 
 .cuore {
@@ -61,6 +68,7 @@ img {
     top: 20px;
     background-color: white;
     padding: 3px 6px;
+    z-index: 60;
 }
 
 .sconto {
@@ -71,6 +79,7 @@ img {
     position: absolute;
     bottom: 20px;
     left: 0px;
+    z-index: 60;
 }
 
 .etichetta {
@@ -81,6 +90,7 @@ img {
     position: absolute;
     bottom: 20px;
     left: 35px;
+    z-index: 60;
 }
 
 .etichetta2 {
@@ -91,6 +101,7 @@ img {
     position: absolute;
     bottom: 20px;
     left: 0px;
+    z-index: 60;
 }
 
 .marca {
